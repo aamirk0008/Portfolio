@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Menu, X, Instagram, Facebook, Twitter, Github } from 'lucide-react';
+import { Menu, X, Github, Linkedin } from 'lucide-react';
 import { useTheme } from '../contexts/ThemeContext';
 
 const navLinks = [
@@ -60,14 +60,11 @@ export const Navbar: React.FC = () => {
 
         {/* Social Icons */}
         <div className="hidden md:flex items-center gap-5">
-          <a href="#" className="text-gray-400 hover:text-white transition-colors">
-            <Instagram size={20} />
+          <a href="https://github.com/aamirk0008" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+            <Github size={20} />
           </a>
-          <a href="#" className="text-gray-400 hover:text-white transition-colors">
-            <Facebook size={20} />
-          </a>
-          <a href="#" className="text-gray-400 hover:text-white transition-colors">
-            <Twitter size={20} />
+          <a href="https://linkedin.com/in/sheikh-aamir-41661b262" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+            <Linkedin size={20} />
           </a>
         </div>
 
@@ -100,9 +97,8 @@ export const Navbar: React.FC = () => {
               </a>
             ))}
             <div className="flex gap-6 pt-4 border-t border-white/5">
-              <Instagram size={20} className="text-gray-400" />
-              <Facebook size={20} className="text-gray-400" />
-              <Twitter size={20} className="text-gray-400" />
+              <Github size={20} className="text-gray-400" />
+              <Linkedin size={20} className="text-gray-400" />
             </div>
           </motion.div>
         )}

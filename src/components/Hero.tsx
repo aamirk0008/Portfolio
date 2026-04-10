@@ -34,16 +34,6 @@ export const Hero: React.FC = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-gray-300 text-xs font-medium mb-8 backdrop-blur-sm"
-          >
-            <Share2 size={14} className="text-purple-500" />
-            Fullstack Developer Portfolio
-          </motion.div>
-          
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.1] mb-8 text-white">
             Providing <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">the best</span> <br />
             project experience.
@@ -53,13 +43,14 @@ export const Hero: React.FC = () => {
             I'm a Full Stack Software Engineer with experience in Website, Mobile, and Software development. Check out my projects and skills.
           </p>
 
-          <motion.button
+          <motion.a
+            href="#"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-8 py-3 bg-purple-600/20 border border-purple-500/30 text-white rounded-xl font-medium text-lg backdrop-blur-md hover:bg-purple-600/30 transition-all shadow-[0_0_20px_rgba(168,85,247,0.2)]"
+            className="inline-block px-8 py-3 bg-purple-600/20 border border-purple-500/30 text-white rounded-xl font-medium text-lg backdrop-blur-md hover:bg-purple-600/30 transition-all shadow-[0_0_20px_rgba(168,85,247,0.2)]"
           >
-            Learn more
-          </motion.button>
+            Resume
+          </motion.a>
         </motion.div>
 
         {/* Orbital Icons Section */}

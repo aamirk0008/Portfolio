@@ -45,14 +45,14 @@ export const Education: React.FC = () => {
             className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-gray-300 text-xs font-medium mb-6 backdrop-blur-sm"
           >
             <Sparkles size={14} className="text-purple-500" />
-            Think better with Next.js 14
+            Mastering the MERN Stack
           </motion.div>
           
           <h2 className="text-4xl md:text-6xl font-bold tracking-tight text-white mb-4">
-            Making apps with <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">modern technologies.</span>
+            My <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">Technical Arsenal.</span>
           </h2>
           <p className="font-cursive text-2xl md:text-3xl text-gray-400">
-            Never miss a task, deadline or idea.
+            Crafting digital excellence with precision.
           </p>
         </motion.div>
 
