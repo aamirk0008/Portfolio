@@ -5,9 +5,10 @@ import { useTheme } from '../contexts/ThemeContext';
 
 const navLinks = [
   { name: 'About me', href: '#about' },
-  { name: 'Skills', href: '#education' },
+  { name: 'Work', href: '#experience' },
   { name: 'Projects', href: '#projects' },
-  { name: 'Source Code', href: 'https://github.com/aamirk0008', external: true },
+  { name: 'Skills', href: '#education' },
+  { name: 'Connect', href: '#contact' },
 ];
 
 export const Navbar: React.FC = () => {

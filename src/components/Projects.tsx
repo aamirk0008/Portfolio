@@ -8,7 +8,7 @@ const projects = [
     description: 'A comprehensive hotel booking platform featuring real-time room availability, secure JWT authentication, and a clean UI with custom animations.',
     tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS', 'Framer Motion'],
     image: 'https://picsum.photos/seed/hotel/800/600',
-    live: '#',
+    live: 'https://into-the-wilds-frontend-livid.vercel.app/',
     github: 'https://github.com/aamirk0008',
   },
   {
@@ -66,7 +66,7 @@ export const Projects: React.FC = () => {
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
-                  <a
+                  <a target="_blank"
                     href={project.live}
                     className="p-3 bg-white text-black rounded-full hover:bg-orange-500 hover:text-white transition-colors"
                   >

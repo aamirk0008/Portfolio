@@ -21,7 +21,7 @@ const skillRows = [
   [
     { name: 'JWT', icon: 'https://jwt.io/img/pic_logo.svg' },
     { name: 'WebSockets', icon: 'https://www.vectorlogo.zone/logos/socketio/socketio-icon.svg' },
-    { name: 'Framer motion', icon: 'https://raw.githubusercontent.com/framer/motion/main/packages/framer-motion/logo.svg' },
+    { name: 'Framer motion', icon: 'https://cdn.brandfetch.io/idDJv1mfrb/w/1080/h/1080/theme/dark/icon.png?c=1bxid64Mup7aczewSAYMX&t=1753779057992' },
     { name: 'Gsap', icon: 'https://cdn.worldvectorlogo.com/logos/gsap-greensock.svg' },
   ]
 ];

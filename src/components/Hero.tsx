@@ -44,7 +44,9 @@ export const Hero: React.FC = () => {
           </p>
 
           <motion.a
-            href="#"
+            href="https://drive.google.com/file/d/1LjzQTpSRu9RA3XdPetXvXCJHKnIXQSf2/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="inline-block px-8 py-3 bg-purple-600/20 border border-purple-500/30 text-white rounded-xl font-medium text-lg backdrop-blur-md hover:bg-purple-600/30 transition-all shadow-[0_0_20px_rgba(168,85,247,0.2)]"
