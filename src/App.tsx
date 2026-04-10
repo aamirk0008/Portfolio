@@ -22,6 +22,7 @@ export default function App() {
           <Projects />
           <Education />
         </main>
+        <Footer />
       </div>
     </ThemeProvider>
   );
