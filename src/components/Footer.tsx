@@ -4,7 +4,7 @@ import { Github, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (
-    <footer id="contact" className="py-24 bg-[#030014] border-t border-white/5 relative overflow-hidden">
+    <footer id="contact" className=" bg-[#030014] border-t border-white/5 relative overflow-hidden">
       {/* Background Glow */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-[300px] bg-purple-600/10 rounded-full blur-[120px] pointer-events-none" />
       

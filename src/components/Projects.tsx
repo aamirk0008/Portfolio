@@ -13,10 +13,10 @@ const projects = [
   },
   {
     title: 'Nyouta',
-    description: 'Production-ready wedding invitation eCommerce platform with RESTful backend, admin dashboard for product CRUD, and order monitoring.',
+    description: 'Wedding invitation eCommerce platform with RESTful backend, admin dashboard for product CRUD, and order monitoring.',
     tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS', 'Redux'],
     image: 'https://picsum.photos/seed/wedding/800/600',
-    live: '#',
+    live: 'https://nyouta-bay.vercel.app/',
     github: 'https://github.com/aamirk0008',
   },
   {
