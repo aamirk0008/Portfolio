@@ -34,13 +34,13 @@ export const Hero: React.FC = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.1] mb-8 text-white">
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-[1.1] mb-8 text-white">
             Providing <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">the best</span> <br />
             project experience.
           </h1>
           
           <p className="text-lg text-gray-400 max-w-lg mb-10 leading-relaxed">
-            I'm a Full Stack Software Engineer with experience in Website, Mobile, and Software development. Check out my projects and skills.
+           Hey, I am <span className="text-white font-bold tracking-tight">Sheikh Aamir</span>,  Full Stack Developer specializing in the MERN ecosystem. I build secure, production-ready web applications that bridge the gap between robust backend architectures and highly interactive, user-centric UIs.
           </p>
 
           <motion.a
