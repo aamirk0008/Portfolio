@@ -50,8 +50,6 @@ export const Navbar: React.FC = () => {
             <a
               key={link.name}
               href={link.href}
-              target={link.external ? '_blank' : undefined}
-              rel={link.external ? 'noopener noreferrer' : undefined}
               className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
             >
               {link.name}
