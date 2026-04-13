@@ -33,7 +33,7 @@ export const Navbar: React.FC = () => {
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         {/* Logo */}
-        <motion.div
+        <motion.a href="/"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           className="flex items-center gap-3"
@@ -42,7 +42,7 @@ export const Navbar: React.FC = () => {
             <div className="w-5 h-5 bg-white rounded-sm rotate-45" />
           </div>
           <span className="text-white font-bold tracking-tight hidden sm:block">Sheikh Aamir</span>
-        </motion.div>
+        </motion.a>
 
         {/* Desktop Nav Links */}
         <div className="hidden md:flex items-center bg-white/5 border border-white/10 backdrop-blur-md px-6 py-2 rounded-full gap-8">
