@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Github, Linkedin, Mail, MapPin, Phone, Send, CheckCircle, AlertCircle } from 'lucide-react';
+import { Github, Linkedin, Mail, MapPin, Phone, Send, CheckCircle, AlertCircle, Facebook, Instagram, Twitter } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
@@ -81,6 +81,34 @@ export const Footer: React.FC = () => {
                   <p className="text-[10px] uppercase tracking-widest font-bold text-gray-500">Location</p>
                   <p className="font-semibold text-white text-sm">New Delhi, IN</p>
                 </div>
+              </div>
+
+              {/* Social Media Links */}
+              <div className="flex items-center gap-3 pt-4">
+                <motion.a
+                  href="#"
+                  whileHover={{ scale: 1.1, backgroundColor: 'rgba(255, 255, 255, 0.1)' }}
+                  className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-blue-500 transition-colors"
+                  aria-label="Facebook"
+                >
+                  <Facebook size={20} />
+                </motion.a>
+                <motion.a
+                  href="#"
+                  whileHover={{ scale: 1.1, backgroundColor: 'rgba(255, 255, 255, 0.1)' }}
+                  className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-pink-500 transition-colors"
+                  aria-label="Instagram"
+                >
+                  <Instagram size={20} />
+                </motion.a>
+                <motion.a
+                  href="#"
+                  whileHover={{ scale: 1.1, backgroundColor: 'rgba(255, 255, 255, 0.1)' }}
+                  className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-blue-400 transition-colors"
+                  aria-label="Twitter"
+                >
+                  <Twitter size={20} />
+                </motion.a>
               </div>
             </div>
           </div>
