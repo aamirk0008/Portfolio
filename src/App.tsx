@@ -13,6 +13,7 @@ import { Projects } from './components/Projects';
 import { Education } from './components/Education';
 import { Footer } from './components/Footer';
 import { Preloader } from './components/Preloader';
+import { ScrollToTop } from './components/ScrollToTop';
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -32,6 +33,7 @@ export default function App() {
               <Education />
             </main>
             <Footer />
+            <ScrollToTop />
           </div>
         )}
       </AnimatePresence>
