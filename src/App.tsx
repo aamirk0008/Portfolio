@@ -12,6 +12,7 @@ import { BentoSummary } from './components/BentoSummary';
 import { Experience } from './components/Experience';
 import { Projects } from './components/Projects';
 import { Education } from './components/Education';
+import { SkillsMastery } from './components/SkillsMastery';
 import { Footer } from './components/Footer';
 import { Preloader } from './components/Preloader';
 import { ScrollToTop } from './components/ScrollToTop';
@@ -34,7 +35,7 @@ export default function App() {
               <BentoSummary />
               <Experience />
               <Projects />
-              <Education />
+              <SkillsMastery />
             </main>
             <Footer />
             <ScrollToTop />
