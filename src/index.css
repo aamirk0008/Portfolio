@@ -13,6 +13,7 @@ html {
 
 body {
   @apply font-sans antialiased;
+  cursor: none;
 }
 
 .custom-scrollbar::-webkit-scrollbar {

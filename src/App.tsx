@@ -14,12 +14,14 @@ import { Education } from './components/Education';
 import { Footer } from './components/Footer';
 import { Preloader } from './components/Preloader';
 import { ScrollToTop } from './components/ScrollToTop';
+import { CustomCursor } from './components/CustomCursor';
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   return (
     <ThemeProvider>
+      <CustomCursor />
       <AnimatePresence mode="wait">
         {isLoading ? (
           <Preloader key="loader" finishLoading={() => setIsLoading(false)} />
