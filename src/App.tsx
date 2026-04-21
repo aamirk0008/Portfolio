@@ -8,6 +8,7 @@ import { AnimatePresence } from 'motion/react';
 import { ThemeProvider } from './contexts/ThemeContext';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
+import { BentoSummary } from './components/BentoSummary';
 import { Experience } from './components/Experience';
 import { Projects } from './components/Projects';
 import { Education } from './components/Education';
@@ -30,6 +31,7 @@ export default function App() {
             <Navbar />
             <main>
               <Hero />
+              <BentoSummary />
               <Experience />
               <Projects />
               <Education />
