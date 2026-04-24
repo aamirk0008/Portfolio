@@ -16,6 +16,26 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: 'Finance Dashboard',
+    description: 'A full-stack finance management system with role-based access control, real-time analytics, and an interactive dashboard featuring charts, transaction management, and financial health scoring.',
+    tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Redux Toolkit', 'Tailwind CSS', 'Framer Motion', 'Recharts'],
+    image: 'https://res.cloudinary.com/datflmfl4/image/upload/v1777056111/Screenshot_2026-04-25_001041_bvj0kj.png',
+    live: 'https://finance-dashboard-rho-lake.vercel.app/',
+    github: 'https://github.com/aamirk0008/finance-dashboard.git',
+    challenge: 'Building a secure multi-role finance system where different users interact with financial data based on their permissions, while delivering meaningful analytics through aggregated data pipelines.',
+    solution: 'Designed a clean MVC backend with JWT authentication and role-based middleware guards. Built MongoDB aggregation pipelines for real-time dashboard analytics. Used Redux Toolkit for centralized state management and Framer Motion for a polished glassmorphism dark UI.',
+    features: [
+      'Role-based access control — Admin, Analyst, Viewer',
+      'Interactive dashboard with income vs expense charts',
+      'Financial health score with ratio analytics',
+      'Full transaction CRUD with filtering and pagination',
+      'Soft delete for financial audit trail',
+      'JWT authentication with auto token injection',
+      'MongoDB aggregation pipelines for analytics',
+      'Deployed on Render (API) and Vercel (Frontend)'
+    ]
+  },
+  {
     title: 'IntoTheWildStays',
     description: 'A comprehensive hotel booking platform featuring real-time room availability, secure JWT authentication, and a clean UI with custom animations.',
     tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS', 'Framer Motion'],
@@ -75,7 +95,7 @@ export const Projects: React.FC = () => {
     <section id="projects" className="py-24 bg-[#030014] relative overflow-hidden">
       {/* Background Glow */}
       <div className="absolute top-1/2 left-0 w-[500px] h-[500px] bg-purple-600/10 rounded-full blur-[120px] pointer-events-none" />
-      
+
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -119,7 +139,7 @@ export const Projects: React.FC = () => {
                 <p className="text-gray-400 text-sm mb-6 line-clamp-3">
                   {project.description}
                 </p>
-                
+
                 <div className="flex flex-wrap gap-2 mb-8">
                   {project.tech.map((t) => (
                     <span
@@ -138,20 +158,20 @@ export const Projects: React.FC = () => {
                   >
                     View Case Study
                   </button>
-                  
+
                   <div className="flex items-center gap-6 pt-4 border-t border-white/5">
-                    <a 
-                      href={project.live} 
-                      target="_blank" 
+                    <a
+                      href={project.live}
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 text-sm font-bold text-purple-400 hover:text-purple-300 transition-colors"
                     >
                       <ExternalLink size={18} />
                       Live Link
                     </a>
-                    <a 
-                      href={project.github} 
-                      target="_blank" 
+                    <a
+                      href={project.github}
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 text-sm font-bold text-gray-400 hover:text-white transition-colors"
                     >
@@ -177,7 +197,7 @@ export const Projects: React.FC = () => {
               onClick={() => setSelectedProject(null)}
               className="absolute inset-0 bg-black/80 backdrop-blur-sm"
             />
-            
+
             <motion.div
               initial={{ opacity: 0, scale: 0.9, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
