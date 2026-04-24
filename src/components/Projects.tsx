@@ -74,7 +74,7 @@ const projects: Project[] = [
     description: 'Real-time cricket match fixtures and player statistics aggregator using third-party APIs and Redux for efficient data caching.',
     tech: ['React.js', 'Redux', 'API Integration', 'Tailwind CSS'],
     image: 'https://res.cloudinary.com/datflmfl4/image/upload/v1776348163/Screenshot_2026-04-16_193043_smfpnx.png',
-    live: 'https://shadow-fox2.vercel.app/',
+    live: 'https://fans-mania.vercel.app/',
     github: 'https://github.com/aamirk0008/FansMania.git',
     challenge: 'Aggregating large volumes of real-time sports data from external APIs while maintaining high performance and minimizing redundant network requests.',
     solution: 'Implemented an efficient data fetching layer with Redux-based caching. This strategy significantly reduced API latency and ensured users always see the latest statistics without constant reloading.',
