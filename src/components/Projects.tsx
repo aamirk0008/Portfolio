@@ -16,6 +16,23 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: 'BuildRight Construction Platform',
+    description: 'A modern, responsive digital consultancy and lead generation platform for a civil engineering business, featuring city-specific project routing, service listings, and an interactive cost estimation tool.',
+    tech: ['Next.js', 'React.js', 'TypeScript', 'Tailwind CSS', 'MongoDB', 'Mongoose', 'Resend API'],
+    image: 'https://res.cloudinary.com/datflmfl4/image/upload/v1777576654/Screenshot_2026-05-01_004551_kguxry.png',
+    live: 'https://apex-constructions-five.vercel.app/',
+    github: 'https://github.com/aamirk0008/Apex-constructions.git',
+    challenge: 'Creating a localized digital presence across 20+ cities while providing potential clients with a seamless, interactive way to generate accurate real-time cost estimates for various construction services.',
+    solution: 'Built a highly performant SSR application using Next.js App Router and TypeScript. Developed a custom cost calculator component and implemented dynamic routing for city-specific content. Integrated MongoDB for data management and the Resend API for automated lead handling.',
+    features: [
+      'Interactive cost estimator for real-time project quotes',
+      'Dynamic project gallery with city and service type filtering',
+      'Automated lead generation and email notifications via Resend API',
+      'City-specific dynamic routing for localized SEO and services',
+      'Custom REST API routes for contact and lead management',
+      'Fully responsive, modern UI built with Tailwind CSS v4',
+    ]
+  },{
     title: 'Finance Dashboard',
     description: 'A full-stack finance management system with role-based access control, real-time analytics, and an interactive dashboard featuring charts, transaction management, and financial health scoring.',
     tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Redux Toolkit', 'Tailwind CSS', 'Framer Motion', 'Recharts'],
