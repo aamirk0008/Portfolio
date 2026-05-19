@@ -34,15 +34,16 @@ const projects: Project[] = [
     ]
   },{
     title: 'Finance Dashboard',
-    description: 'A full-stack finance management system with role-based access control, real-time analytics, and an interactive dashboard featuring charts, transaction management, and financial health scoring.',
-    tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Redux Toolkit', 'Tailwind CSS', 'Framer Motion', 'Recharts'],
+    description: 'A full-stack finance management system with role-based access control, real-time analytics, an interactive dashboard featuring charts, and an AI-powered financial assistant.',
+    tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Redux Toolkit', 'Tailwind CSS', 'Framer Motion', 'Recharts', 'Gemini AI API'],
     image: 'https://res.cloudinary.com/datflmfl4/image/upload/v1777056111/Screenshot_2026-04-25_001041_bvj0kj.png',
     live: 'https://finance-dashboard-rho-lake.vercel.app/',
     github: 'https://github.com/aamirk0008/finance-dashboard.git',
-    challenge: 'Building a secure multi-role finance system where different users interact with financial data based on their permissions, while delivering meaningful analytics through aggregated data pipelines.',
-    solution: 'Designed a clean MVC backend with JWT authentication and role-based middleware guards. Built MongoDB aggregation pipelines for real-time dashboard analytics. Used Redux Toolkit for centralized state management and Framer Motion for a polished glassmorphism dark UI.',
+    challenge: 'Building a secure multi-role finance system with permission-based data access, while simultaneously integrating a context-aware AI assistant capable of analyzing complex user financial data in real-time to provide personalized insights.',
+    solution: 'Designed a clean MVC backend with JWT authentication and role-based middleware guards. Built MongoDB aggregation pipelines for real-time dashboard analytics. Integrated the Gemini 3 Flash API to construct a smart chatbot that injects real-time database context into system prompts. Used Redux Toolkit for state management and Framer Motion for a polished, highly interactive glassmorphism UI.',
     features: [
       'Role-based access control — Admin, Analyst, Viewer',
+      'Context-aware AI Chatbot powered by Gemini 3 Flash',
       'Interactive dashboard with income vs expense charts',
       'Financial health score with ratio analytics',
       'Full transaction CRUD with filtering and pagination',
@@ -51,7 +52,7 @@ const projects: Project[] = [
       'MongoDB aggregation pipelines for analytics',
       'Deployed on Render (API) and Vercel (Frontend)'
     ]
-  },
+},
   {
     title: 'IntoTheWildStays',
     description: 'A comprehensive hotel booking platform featuring real-time room availability, secure JWT authentication, and a clean UI with custom animations.',
