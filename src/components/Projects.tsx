@@ -16,6 +16,26 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: 'DocuMind — AI Document Q&A System',
+    description: 'A production-grade RAG (Retrieval-Augmented Generation) system where users upload PDFs and chat with them using AI. Every answer is strictly grounded in the uploaded document with exact source citations and relevance scores.',
+    tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB Atlas', 'LangChain.js', 'Gemini API', 'BullMQ', 'Redis', 'Passport.js', 'Tailwind CSS', 'Zustand'],
+    image: 'https://res.cloudinary.com/datflmfl4/image/upload/v1779868101/Screenshot_2026-05-27_131746_poitai.png',
+    live: 'https://docu-mind-neon-gamma.vercel.app',
+    github: 'https://github.com/aamirk0008/DocuMind.git',
+    challenge: 'Building a reliable document Q&A system that returns accurate, verifiable answers grounded strictly in the uploaded document — not generic AI responses — while handling large PDFs asynchronously without blocking the user experience.',
+    solution: 'Implemented a full RAG pipeline: PDF parsing with pdfjs-dist, recursive text chunking, Gemini embedding-001 (3072-dim vectors) stored in MongoDB Atlas Vector Search, and Gemini 2.5 Flash for answer generation. Used BullMQ + Redis for async ingestion with 3x retry and exponential backoff. Built JWT dual-token auth with refresh rotation and Google OAuth 2.0 via Passport.js.',
+    features: [
+      'RAG pipeline: PDF → chunks → Gemini embeddings → MongoDB Atlas Vector Search → Gemini answer',
+      'Source citations with chunk index and relevance scores for every answer',
+      'BullMQ + Redis async ingestion queue with 3x retry and exponential backoff',
+      'JWT dual-token auth with refresh rotation, reuse detection, and Google OAuth 2.0',
+      'AI-generated suggested questions when document is ready via Gemini API',
+      'Real-time document status polling with React Query',
+      'Full chat history persisted to MongoDB with markdown-rendered responses',
+      'Dark/light mode, rate limiting, input validation, deployed on Render + Vercel',
+    ]
+  }
+  , {
     title: 'BuildRight Construction Platform',
     description: 'A modern, responsive digital consultancy and lead generation platform for a civil engineering business, featuring city-specific project routing, service listings, and an interactive cost estimation tool.',
     tech: ['Next.js', 'React.js', 'TypeScript', 'Tailwind CSS', 'MongoDB', 'Mongoose', 'Resend API'],
@@ -32,7 +52,7 @@ const projects: Project[] = [
       'Custom REST API routes for contact and lead management',
       'Fully responsive, modern UI built with Tailwind CSS v4',
     ]
-  },{
+  }, {
     title: 'Finance Dashboard',
     description: 'A full-stack finance management system with role-based access control, real-time analytics, an interactive dashboard featuring charts, and an AI-powered financial assistant.',
     tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Redux Toolkit', 'Tailwind CSS', 'Framer Motion', 'Recharts', 'Gemini AI API'],
@@ -52,7 +72,7 @@ const projects: Project[] = [
       'MongoDB aggregation pipelines for analytics',
       'Deployed on Render (API) and Vercel (Frontend)'
     ]
-},
+  },
   {
     title: 'IntoTheWildStays',
     description: 'A comprehensive hotel booking platform featuring real-time room availability, secure JWT authentication, and a clean UI with custom animations.',
