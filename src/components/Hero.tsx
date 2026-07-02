@@ -44,7 +44,7 @@ export const Hero: React.FC = () => {
           </p>
 
           <motion.a
-            href="https://drive.google.com/file/d/1LjzQTpSRu9RA3XdPetXvXCJHKnIXQSf2/view?usp=sharing"
+            href="https://drive.google.com/file/d/1Xxm1kgP13NmMxIX2fphi9U7Ynr8uvBUd/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
